@@ -26,7 +26,6 @@ A fully responsive **Task Manager** web application built with the **MERN** stac
   - Task statistics: pending, in-progress, completed
 - **Responsive UI**
   - Mobile-first design
-- **Dark/Light Mode Toggle** (optional implementation)
 
 ---
 
