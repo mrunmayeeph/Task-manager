@@ -6,7 +6,7 @@ import {
   Outlet,
   Navigate
 } from "react-router-dom";
-import Login from './pages/Auth/login';
+import Login from './pages/Auth/Login';
 import SignUp from './pages/Auth/SignUp';
 import Dashboard from './pages/Admin/Dashboard';
 import ManageTasks from './pages/Admin/ManageTasks';
