@@ -11,9 +11,24 @@ const reportRoutes = require("./routes/reportRoutes");
 
 const app = express();
 
+const allowedOrigins = [
+    "http://localhost:5173",
+    "https://radiant-cajeta-54f34d.netlify.app"
+];
+
 app.use(
     cors({
-        origin: process.env.CLIENT_URL || "*",
+        origin: function (origin, callback) {
+            // Allow server-to-server (no origin)
+            if (!origin) return callback(null, true);
+
+            if (allowedOrigins.includes(origin)) {
+                callback(null, true);
+            } else {
+                callback(new Error("CORS blocked for origin: " + origin));
+            }
+        },
+        credentials: true,
         methods: ["GET", "POST", "PUT", "DELETE"],
         allowedHeaders: ["Content-Type", "Authorization"],
     })
