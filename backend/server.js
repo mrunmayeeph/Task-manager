@@ -13,7 +13,7 @@ const app = express();
 
 const allowedOrigins = [
     "http://localhost:5173",
-    "https://radiant-cajeta-54f34d.netlify.app"
+    "https://taskos-portal.netlify.app"
 ];
 
 app.use(
