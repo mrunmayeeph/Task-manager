@@ -36,3 +36,4 @@ A fully responsive **Task Manager** web application built with the **MERN** stac
 - **Other:** ExcelJS (for exporting reports), react-hot-toast, react-select
 
 ---
+Deployed link  : taskos-portal.netlify.app
